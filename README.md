@@ -41,6 +41,4 @@ KB For Kilobytes, MB For Megabytes, GB For Gigabytes, TB For Terabytes
 ![Watch the video](http://s13.picofile.com/file/8400600892/shot6.png)
 <br>
 To Exit Or Stop The Progress Use "ctrl + c"
-<br><br>
-# Executable File
-As You Worked With The Script!
+<br>
