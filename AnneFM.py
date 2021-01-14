@@ -17,7 +17,7 @@ def clean():
 
 def banner():
 	print(f'''{color.GREEN}                           ______ _ _      __  __       _             
-    /\ {color.BLUE1}github.com/one-eyed{color.GREEN}|  ____(_) |    |  \/  |     | |            
+    /\ {color.BLUE1}github.com/weed-web{color.GREEN}|  ____(_) |    |  \/  |     | |            
    /  \   _ __  _ __   ___| |__   _| | ___| \  / | __ _| | _____ _ __ 
   / /\ \ | '_ \| '_ \ / _ \  __| | | |/ _ \ |\/| |/ _` | |/ / _ \ '__|
  / ____ \| | | | | | |  __/ |    | | |  __/ |  | | (_| |   <  __/ |   
