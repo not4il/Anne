@@ -1,5 +1,6 @@
 import os, time
 
+
 class color():
 	RED = '\033[31m'
 	GREEN = '\033[32m'
@@ -12,16 +13,19 @@ class color():
 	WHITE = '\033[37m'
 	BLACK = '\033[1;30;48m'
 
+
 def clean():
 	os.system(['clear', 'cls'][os.name == 'nt'])
 
+
 def banner():
 	print(f'''{color.GREEN}                           ______ _ _      __  __       _             
-    /\ {color.BLUE1}github.com/weed-web{color.GREEN}|  ____(_) |    |  \/  |     | |            
+    /\ {color.BLUE1} github.com/not4il{color.GREEN} |  ____(_) |    |  \/  |     | |            
    /  \   _ __  _ __   ___| |__   _| | ___| \  / | __ _| | _____ _ __ 
   / /\ \ | '_ \| '_ \ / _ \  __| | | |/ _ \ |\/| |/ _` | |/ / _ \ '__|
  / ____ \| | | | | | |  __/ |    | | |  __/ |  | | (_| |   <  __/ |   
 /_/    \_\_| |_|_| |_|\___|_|    |_|_|\___|_|  |_|\__,_|_|\_\___|_|   \n''')
+
 
 def getname():
 	name = input(f'{color.PURPLE}Enter Your File Name: {color.BLACK}')
@@ -29,6 +33,7 @@ def getname():
 		print(f'{color.RED}You Must Enter A Name!')
 		name = input(f'{color.PURPLE}Enter Your File Name: {color.BLACK}')
 	return name
+
 
 def getstg():
 	sg = input(f'{color.CYAN}Enter Your Data Storage Unit (e.g. KB, MB, GB, TB): {color.BLACK}')
@@ -41,6 +46,7 @@ def getstg():
 		print(f'{color.RED}You Must Enter A Correct Unit!')
 		return 1
 
+
 def getsize():
 	try:
 		much = int(input(f'{color.BLUE}Enter Your Data Size: {color.BLACK}'))
@@ -49,6 +55,7 @@ def getsize():
 		print(f'{color.RED}Please Enter A Correct Size!')
 		time.sleep(1)
 		return much
+
 
 def getpath(name):
 	path = input(f'{color.YELLOW}Type Your Path For Creating The File Or Leave It Empty: {color.BLACK}')
@@ -59,6 +66,7 @@ def getpath(name):
 			return filepath
 	else:
 		return path
+
 
 def create():
 	try:
@@ -127,5 +135,6 @@ def create():
 		print(f'{color.RED}\nExiting...{color.WHITE}')
 		time.sleep(2)
 		exit()
+
 
 create()
